@@ -1,4 +1,5 @@
 import express from "express";
+import { config } from "./data.js";
 
 const app = express();
 
@@ -11,6 +12,6 @@ app.post("/", (req, res) => {
     res.send("Hello, World!");
 });
 
-app.listen(8080, () => {
+app.listen(config.port, () => {
     console.log("Server is live!");
 });
