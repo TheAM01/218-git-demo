@@ -1,4 +1,4 @@
 export const config = {
-    port: 8000,
+    port: 8080,
     serverName: "Express Demo Server"
 }

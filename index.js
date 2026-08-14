@@ -6,10 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Hello, World!");
-});
-app.post("/", (req, res) => {
-    res.send("Hello, World!");
+    res.send(config.serverName);
 });
 
 app.listen(config.port, () => {
